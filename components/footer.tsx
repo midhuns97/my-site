@@ -19,7 +19,7 @@ const Footer = () => {
           <div className="md:col-span-2">
             <Link href="/" className="text-2xl font-bold text-primary mb-4 block">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-blue-500">
-                Alex Morgan
+                Midhun S
               </span>
             </Link>
             <p className="text-muted-foreground mb-6 max-w-md">
@@ -89,7 +89,7 @@ const Footer = () => {
         
         <div className="border-t border-border/20 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-muted-foreground text-sm mb-4 md:mb-0">
-            © {new Date().getFullYear()} Alex Morgan. All rights reserved.
+            © {new Date().getFullYear()} Midhun S. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             <Button 

@@ -56,26 +56,26 @@ const Contact = () => {
     {
       icon: <Mail className="h-5 w-5 text-purple-500" />,
       title: "Email",
-      value: "alex@example.com",
-      link: "mailto:alex@example.com",
+      value: "hi@midhuns.com",
+      link: "mailto:hi@midhuns.com",
     },
     {
       icon: <Phone className="h-5 w-5 text-blue-500" />,
       title: "Phone",
-      value: "+1 (555) 123-4567",
-      link: "tel:+15551234567",
+      value: "+91 8943 397 962",
+      link: "tel:+918943397962",
     },
     {
       icon: <MapPin className="h-5 w-5 text-indigo-500" />,
       title: "Location",
-      value: "San Francisco, CA",
+      value: "Kerala, India",
       link: "#",
     },
     {
       icon: <Calendar className="h-5 w-5 text-purple-500" />,
       title: "Availability",
       value: "Book a consultation",
-      link: "https://calendly.com",
+      link: "https://calendly.com/midhunsanthakumar-97/30min",
     },
   ];
 
@@ -83,7 +83,7 @@ const Contact = () => {
     {
       icon: <Linkedin className="h-5 w-5" />,
       name: "LinkedIn",
-      link: "https://linkedin.com",
+      link: "https://www.linkedin.com/in/midhuns-/",
       color: "bg-[#0077B5] hover:bg-[#0077B5]/80",
     },
     {

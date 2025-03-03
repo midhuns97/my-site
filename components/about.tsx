@@ -32,7 +32,7 @@ const About = () => {
     },
     {
       year: "2018-2020",
-      role: "Software Sales Executive",
+      role: "Software Sales Officer",
       description: "Transitioned to sales, closing high-value deals and developing client relationships in the tech sector.",
       icon: <Briefcase className="h-5 w-5 text-blue-500" />,
     },
