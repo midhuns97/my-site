@@ -25,25 +25,25 @@ const About = () => {
 
   const timelineItems = [
     {
-      year: "2016-2018",
+      year: "2018-2019",
       role: "Python Developer",
       description: "Started career building web applications and data analysis tools using Python, Django, and Flask.",
       icon: <Code className="h-5 w-5 text-purple-500" />,
     },
     {
-      year: "2018-2020",
+      year: "2019-2022",
       role: "Software Sales Officer",
       description: "Transitioned to sales, closing high-value deals and developing client relationships in the tech sector.",
       icon: <Briefcase className="h-5 w-5 text-blue-500" />,
     },
     {
-      year: "2020-2022",
+      year: "2021-2024",
       role: "Business Strategist",
       description: "Led business strategy initiatives, focusing on market expansion and digital transformation projects.",
       icon: <LineChart className="h-5 w-5 text-indigo-500" />,
     },
     {
-      year: "2022-Present",
+      year: "2024-Present",
       role: "VP of Global Partnerships",
       description: "Currently managing strategic partnerships and collaborations with technology providers worldwide.",
       icon: <Users className="h-5 w-5 text-purple-500" />,

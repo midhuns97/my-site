@@ -35,7 +35,7 @@ const Testimonials = () => {
       name: "Emily Rodriguez",
       role: "Director of Innovation, FutureTech",
       image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976&auto=format&fit=crop",
-      content: "Alex's business strategy consultation was exactly what our startup needed. His insights helped us pivot our approach, resulting in 200% revenue growth and successful Series A funding.",
+      content: "Midhun's business strategy consultation was exactly what our startup needed. His insights helped us pivot our approach, resulting in 200% revenue growth and successful Series A funding.",
       company: "FutureTech",
       logo: "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?q=80&w=2069&auto=format&fit=crop",
     },
