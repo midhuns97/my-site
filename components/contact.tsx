@@ -45,31 +45,22 @@ const Contact = () => {
   
       if (response.ok) {
         toast({
-          title: "Message sent!",
-          description: "Thank you for your message. I'll get back to you soon.",
+          title: "Message Sent!",
+          description: "Thank you for reaching out. I'll get back to you soon.",
         });
   
-        setFormData({
-          name: "",
-          email: "",
-          subject: "",
-          message: "",
-        });
+        // Clear the form
+        setFormData({ name: "", email: "", subject: "", message: "" });
       } else {
-        toast({
-          title: "Error",
-          description: "Something went wrong. Please try again.",
-        });
+        toast({ title: "Error", description: "Failed to send message. Try again." });
       }
     } catch (error) {
-      toast({
-        title: "Error",
-        description: "Network error. Please try again.",
-      });
+      toast({ title: "Error", description: "Network error. Please try again." });
     } finally {
       setIsSubmitting(false);
     }
-  }; 
+  };
+  
 
   const contactInfo = [
     {
