@@ -35,22 +35,29 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+  
     // Simulate form submission
     setTimeout(() => {
+      // Send an email (Replace with actual email-sending logic)
+      window.location.href = `mailto:hello@midhuns.com?subject=New Customer Enquiry: ${encodeURIComponent(formData.subject)}&body=Name: ${encodeURIComponent(formData.name)}%0D%0AEmail: ${encodeURIComponent(formData.email)}%0D%0AMessage: ${encodeURIComponent(formData.message)}`;
+  
+      // Show success toast
       toast({
         title: "Message sent!",
         description: "Thank you for your message. I'll get back to you soon.",
       });
+  
+      // Reset form
       setFormData({
         name: "",
         email: "",
         subject: "",
         message: "",
       });
+  
       setIsSubmitting(false);
     }, 1500);
-  };
+  };  
 
   const contactInfo = [
     {
