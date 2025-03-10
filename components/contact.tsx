@@ -10,7 +10,8 @@ import {
   Linkedin, 
   Twitter, 
   Github,
-  Send
+  Send,
+  Instagram
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -97,9 +98,9 @@ const Contact = () => {
       color: "bg-[#0077B5] hover:bg-[#0077B5]/80",
     },
     {
-      icon: <Twitter className="h-5 w-5" />,
-      name: "Twitter",
-      link: "https://twitter.com",
+      icon: <Instagram className="h-5 w-5" />,
+      name: "Instagram",
+      link: "https://www.instagram.com/___midhun_s/",
       color: "bg-[#1DA1F2] hover:bg-[#1DA1F2]/80",
     },
     {
