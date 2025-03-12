@@ -18,6 +18,24 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+      <title>Midhun S | Software Consultant India | Business Strategist</title>
+      <meta name="title" content="Midhun S | Software Consultant India | Business Strategist" />
+      <meta name="description" content="Empowering Businesses with Custom Software Solutions & Strategic Partnerships" />
+
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://www.midhuns.com/" />
+      <meta property="og:title" content="Midhun S | Software Consultant India | Business Strategist" />
+      <meta property="og:description" content="Empowering Businesses with Custom Software Solutions & Strategic Partnerships" />
+      <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:url" content="https://www.midhuns.com/" />
+      <meta property="twitter:title" content="Midhun S | Software Consultant India | Business Strategist" />
+      <meta property="twitter:description" content="Empowering Businesses with Custom Software Solutions & Strategic Partnerships" />
+      <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
+      </head>
       <body className={`${inter.className} dark`}>
         <ThemeProvider
           attribute="class"
