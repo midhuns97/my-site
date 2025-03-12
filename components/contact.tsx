@@ -282,11 +282,13 @@ const Contact = () => {
                 <p className="text-muted-foreground mb-6">
                   Looking for a software consultant to help with your next project? I'm currently available for new opportunities.
                 </p>
-                <Button 
-                  className="w-full bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white shadow-lg shadow-purple-500/20"
-                >
-                  Schedule a Call <Calendar className="ml-2 h-4 w-4" />
-                </Button>
+                <a href="https://calendly.com/midhun-s/30min" target="_blank" rel="noopener noreferrer">
+                  <Button 
+                    className="w-full bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white shadow-lg shadow-purple-500/20"
+                  >
+                    Schedule a Call <Calendar className="ml-2 h-4 w-4" />
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
