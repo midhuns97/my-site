@@ -70,19 +70,23 @@ const Hero = () => {
             </p>
             
             <div className="flex flex-wrap gap-4 pt-4">
-              <Button 
-                size="lg" 
-                className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white shadow-lg shadow-purple-500/20"
-              >
-                Book a Consultation <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-purple-500/20 hover:bg-purple-500/10 hover:text-purple-400"
-              >
-                View Projects
-              </Button>
+              <a href="https://calendly.com/midhun-s/30min" target="_blank" rel="noopener noreferrer">
+                <Button 
+                  size="lg" 
+                  className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white shadow-lg shadow-purple-500/20"
+                >
+                  Book a Consultation <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </a>
+              <a href= "#projects">
+                <Button 
+                  size="lg" 
+                  variant="outline" 
+                  className="border-purple-500/20 hover:bg-purple-500/10 hover:text-purple-400"
+                >
+                  View Projects
+                </Button>
+              </a>
             </div>
             
             <div className="flex items-center gap-6 pt-6">

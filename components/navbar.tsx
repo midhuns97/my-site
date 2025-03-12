@@ -53,12 +53,14 @@ const Navbar = () => {
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-blue-500 transition-all duration-300 group-hover:w-full"></span>
             </Link>
           ))}
-          <Button
-            className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white shadow-lg shadow-purple-500/20"
-            size="sm"
-          >
-            Book a Call
-          </Button>
+          <a href="https://calendly.com/midhun-s/30min" target="_blank" rel="noopener noreferrer">
+            <Button
+             className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white shadow-lg shadow-purple-500/20"
+              size="sm"
+              >
+              Book a Call
+            </Button>
+          </a>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -84,11 +86,14 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
+          <a href="https://calendly.com/midhun-s/30min" target="_blank" rel="noopener noreferrer">
             <Button
-              className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white shadow-lg shadow-purple-500/20 w-full"
-            >
+             className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white shadow-lg shadow-purple-500/20"
+              size="sm"
+              >
               Book a Call
             </Button>
+          </a>
           </nav>
         </div>
       )}

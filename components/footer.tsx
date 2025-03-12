@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { ArrowUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { FaLinkedin, FaFacebook, FaInstagram, FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -11,6 +12,13 @@ const Footer = () => {
       behavior: "smooth",
     });
   };
+
+  const socialLinks = [
+    { name: "LinkedIn", icon: <FaLinkedin className="h-5 w-5" />, url: "https://www.linkedin.com/in/midhuns-" },
+    { name: "Facebook", icon: <FaFacebook className="h-5 w-5" />, url: "https://www.facebook.com/midhun.santhakumar/" },
+    { name: "Instagram", icon: <FaInstagram className="h-5 w-5" />, url: "https://www.instagram.com/___midhun_s/" },
+    { name: "Email", icon: <FaEnvelope className="h-5 w-5" />, url: "mailto:hello@midhuns.com" },
+  ];
 
   return (
     <footer className="relative bg-background border-t border-border/20 pt-12 pb-6">
@@ -25,29 +33,26 @@ const Footer = () => {
             <p className="text-muted-foreground mb-6 max-w-md">
               Empowering businesses with custom software solutions and strategic partnerships. Let's build something amazing together.
             </p>
+
+            {/* Social Media Links */}
             <div className="flex space-x-4">
-              {["LinkedIn", "Twitter", "GitHub", "Email"].map((social) => (
-                <Button key={social} variant="ghost" size="icon" className="h-9 w-9 rounded-full">
-                  <span className="sr-only">{social}</span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="h-4 w-4"
-                  >
-                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-                    <rect width="4" height="12" x="2" y="9" />
-                    <circle cx="4" cy="4" r="2" />
-                  </svg>
+              {socialLinks.map(({ name, icon, url }) => (
+                <Button
+                  key={name}
+                  variant="ghost"
+                  size="icon"
+                  className="h-9 w-9 rounded-full"
+                  asChild
+                >
+                  <a href={url} target="_blank" rel="noopener noreferrer" aria-label={name}>
+                    {icon}
+                  </a>
                 </Button>
               ))}
             </div>
           </div>
-          
+
+          {/* Quick Links */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
@@ -63,7 +68,8 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-          
+
+          {/* Services */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
@@ -86,7 +92,8 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        
+
+        {/* Footer Bottom Section */}
         <div className="border-t border-border/20 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-muted-foreground text-sm mb-4 md:mb-0">
             © {new Date().getFullYear()} Midhun S. All rights reserved.
