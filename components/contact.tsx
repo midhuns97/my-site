@@ -86,7 +86,7 @@ const Contact = () => {
       icon: <Calendar className="h-5 w-5 text-purple-500" />,
       title: "Availability",
       value: "Book a consultation",
-      link: "https://calendly.com/midhunsanthakumar-97/30min",
+      link: "https://calendly.com/midhun-s/30min",
     },
   ];
 
