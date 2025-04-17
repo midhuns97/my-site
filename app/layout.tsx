@@ -28,19 +28,15 @@ export const metadata = {
     images: [{url: 'https://www.midhuns.com/myimage.jpg',},
     ],
   },
+  other: {
+    'google-site-verification': '9xvf2m08d3Mx88Bi0OX9bypznQydTGs4kcY6cKoN3xk',
+  },
 };
 
 export default function RootLayout({
 children,}: {children: React.ReactNode;}) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        {/* Google Site Verification */}
-        <meta
-          name="google-site-verification"
-          content="9xvf2m08d3Mx88Bi0OX9bypznQydTGs4kcY6cKoN3xk"
-        />
-      </head>
       <body className={`${inter.className} dark`}>
         <ThemeProvider
           attribute="class"
