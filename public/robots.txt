@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://midhuns.com
+
+# Sitemaps
+Sitemap: https://midhuns.com/sitemap.xml
