@@ -13,10 +13,6 @@ export default function Head() {
           name="keywords"
           content="Midhun, best consultant in India, software solutions expert, business growth strategies, digital transformation, strategic partnerships, business consultant India, tech entrepreneur"/>
         <meta name="author" content="Midhun S" />
-        <meta
-          name="google-site-verification"
-          content="9xvf2m08d3Mx88Bi0OX9bypznQydTGs4kcY6cKoN3xk"
-        />
   
         {/* Open Graph (Facebook) */}
         <meta property="og:title" content="Midhun – Tech-Driven Growth Consultant" />
