@@ -18,6 +18,7 @@ export default function Home() {
         <meta name="description" content="Midhun S, one of the best consultants in India" />
         <meta name="keywords" content="Midhun, best consultant in India, software solutions expert, business growth strategies, digital transformation, strategic partnerships, business consultant India, tech entrepreneur"/>
         <meta name="author" content="Midhun S" />
+        <meta name="google-site-verification" content="9xvf2m08d3Mx88Bi0OX9bypznQydTGs4kcY6cKoN3xk" />
         
         {/* Open Graph Tags (for social media sharing) */}
         <meta property="og:title" content="Midhun - Best Consultant in India" />
