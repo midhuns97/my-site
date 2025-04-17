@@ -59,11 +59,10 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            About <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-blue-500">Me</span>
+            About <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-blue-500">Midhun</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            A journey from development to strategic partnerships, with a passion for creating innovative software solutions and business growth strategies.
-          </p>
+          I'm Midhun, a passionate software strategist, and one of the best solution consultants in India, helping businesses grow through digital transformation, and smart strategies.<br/>With a keen understanding of the Indian and global markets</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">

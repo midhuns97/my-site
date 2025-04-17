@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
+  experimental: {
+    appDir: true, // enable App Router
+  },
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -8,3 +11,4 @@ const nextConfig = {
 };
 
 module.exports = nextConfig;
+
