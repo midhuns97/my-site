@@ -141,15 +141,17 @@ const Services = () => {
         </div>
 
         <Tabs defaultValue="development" className="w-full" onValueChange={setActiveTab}>
-          <div className="flex justify-center mb-8">
-            <TabsList className="grid grid-cols-3 w-full max-w-md">
+          <div className="flex justify-center  mb-8">
+            <TabsList className="grid grid-cols-3 w-full max-w-3xl">
               {services.map((service) => (
                 <TabsTrigger 
                   key={service.id} 
                   value={service.id}
-                  className={`flex items-center gap-2 ${activeTab === service.id ? getColorClass(service.color, "text") : ""}`}
+                  className={`flex items-center pb-1 gap-2 justify-center ${activeTab === service.id ? getColorClass(service.color, "text") : ""}`}
                 >
+                  <div className="sm:hidden md:inline">
                   {service.icon}
+                  </div>
                   <span className="hidden sm:inline">{service.title}</span>
                 </TabsTrigger>
               ))}
