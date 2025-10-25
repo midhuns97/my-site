@@ -7,6 +7,7 @@ import Projects from "@/components/projects";
 import Testimonials from "@/components/testimonials";
 import Contact from "@/components/contact";
 import Footer from "@/components/footer";
+import Articles from '@/components/articles';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Services />
       <Projects />
       <Testimonials />
+      <Articles/>
       <Contact />
       <Footer />
     </main>
