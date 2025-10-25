@@ -6,10 +6,6 @@ import Contact from "@/components/contact";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 
-// Import your actual components - adjust the paths as needed
-// import Contact from "@/components/Contact";
-// import Footer from "@/components/Footer";
-
 // Required for static export
 export function generateStaticParams() {
   return articles.map((article) => ({
@@ -17,18 +13,19 @@ export function generateStaticParams() {
   }));
 }
 
-export default function ArticleDetail({
+export default async function ArticleDetail({
   params,
 }: {
-  params: { articleId: string };
+  params: Promise<{ articleId: string }>;
 }) {
-  const article = articles.find((a) => a.id === params.articleId);
+  const { articleId } = await params;
+  const article = articles.find((a) => a.id === articleId);
 
   if (!article) return <p className="text-center py-20">Article not found.</p>;
 
   return (
     <>
-    <Navbar />
+      <Navbar />
       <main className="container mx-auto px-4 py-16 pt-32">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-3xl md:text-4xl font-bold mb-6">{article.title}</h1>
