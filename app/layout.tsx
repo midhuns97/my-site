@@ -42,6 +42,7 @@ export default function RootLayout({
 
         {/* ✅ Title Tag */}
         <title>Midhun – Best Software Consultant : Tech Solution Architect</title>
+        <link rel="icon" href="/favicon.ico" />
       </head>
       <body className={`${inter.className} dark`}>
         <ThemeProvider

@@ -1,7 +1,5 @@
 "use client";
 
-// components/Articles.tsx
-
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -29,9 +27,9 @@ const Articles = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="flex overflow-x-auto space-x-6 pb-4 no-scrollbar snap-x snap-mandatory"
+          className="flex overflow-x-auto space-x-6 pb-4 snap-x snap-mandatory no-scrollbar"
         >
-          {articles.map((article, index) => (
+          {articles.map((article) => (
             <motion.div
               key={article.id}
               whileHover={{ scale: 1.03 }}

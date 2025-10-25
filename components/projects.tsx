@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import Contact from "./contact";
 
 const Projects = () => {
   const [activeTab, setActiveTab] = useState("all");
@@ -151,14 +152,14 @@ const Projects = () => {
                         ))}
                       </div>
                     </CardContent>
-                    <CardFooter>
+                    {/* <CardFooter>
                       <Button 
                         variant="ghost" 
                         className="p-0 text-purple-500 hover:bg-purple-500/10"
                       >
-                        View Details <ArrowRight className="ml-2 h-4 w-4" />
+                       View Details <ArrowRight className="ml-2 h-4 w-4" />
                       </Button>
-                    </CardFooter>
+                    </CardFooter> */}
                   </Card>
                 </motion.div>
               ))}
@@ -170,8 +171,14 @@ const Projects = () => {
           <Button 
             className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white shadow-lg shadow-purple-500/20"
             size="lg"
+            onClick={() => {
+            const contactSection = document.getElementById("contact");
+            if (contactSection) {
+              contactSection.scrollIntoView({ behavior: "smooth" });
+            }
+          }}
           >
-            View All Projects <ExternalLink className="ml-2 h-4 w-4" />
+            Contact for More 
           </Button>
         </div>
       </div>
