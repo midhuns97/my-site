@@ -37,6 +37,7 @@ export default async function ArticleDetail({
 
           <div className="prose prose-invert max-w-none">
             <p>{article.excerpt}</p>
+            <div dangerouslySetInnerHTML={{ __html: article.content ?? "" }} />
           </div>
 
           <div className="mt-12">
