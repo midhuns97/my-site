@@ -1,7 +1,7 @@
 export const articles = [
   {
   id: "brand-strategist-in-dubai",
-  title: "Freelancers, Companies, or a Brand Strategist in Dubai for Digital marketing?",
+  title: "Freelancers, Companies, & Brand Strategist in Dubai for Digital marketing?",
   excerpt: "Discover why hiring a Brand Strategist in Dubai can transform your digital marketing outcomes by aligning strategy, execution, and measurable growth.",
   content: `
     <h1>Whom to Choose for Digital Marketing — Freelancers, Companies, or a Brand Strategist in Dubai?</h1>
@@ -40,9 +40,92 @@ export const articles = [
     date: "Jul 2025",
   },
   {
-    id: "building-software-partnerships",
-    title: "Building Strong Software Partnerships for Growth",
-    excerpt: "Partnerships play a key role in scaling tech companies globally. Here's how to build effective ones.",
+    id: "best-software-salesperson",
+    title: "What are the Skills Needed to become Best Software Salesperson?",
+    excerpt: "Sales play a key role in scaling tech companies globally. Here's how to build effective ones.",
+      content: `
+    <h1>The key skills that separate good software sales professionals from great ones.</h1>
+
+<p>Being in tech sales, especially in software and IT service sales, is far from easy. It’s one of those rare careers that demand a person to balance technical understanding with strong business communication skills.</p>
+
+<p>Unlike traditional product sales, software sales require empathy, adaptability, and deep product knowledge. You don’t just sell a product — you sell a solution, a vision, and a promise that technology can improve business outcomes.</p>
+
+<p>For many people, mastering this balance takes years of trial and error. I know this because I’ve been there myself — switching from software development to sales, learning everything from scratch, and building a career step by step.</p>
+
+<h2>My Journey From Software Developer to Software Salesperson</h2>
+
+<p>When I began my career, I started as a software developer. For over a year, I wrote code, understood how software worked, and gained a solid foundation in front-end, back-end, and database management.</p>
+
+<p>That technical base became my biggest advantage later in sales. I could understand exactly what a product did, how it solved problems, and how to explain it in simple language to clients.</p>
+
+<p>But the switch wasn’t smooth. Moving from writing code to handling clients and targets was like entering a completely new world. I had to develop communication, presentation, and negotiation skills — skills that no programming tutorial could teach.</p>
+
+<p>During that time, I was fortunate to work under the guidance of <strong>Mr. Nazli Suhail</strong>, my reporting manager, who mentored me through this transition. He helped me see sales as more than just hitting numbers — he taught me to sell with purpose and integrity.</p>
+
+<p>That mentorship shaped my path. From a <strong>Business Development Officer (BDO)</strong> to a <strong>Business Development Manager (BDM)</strong> and now as the <strong>Vice President of Global Partnerships</strong>, my growth came from continuous learning and the determination to connect technology with real business needs.</p>
+
+<h2>Essential Software Sales Skills You Must Master</h2>
+
+<p>Over the years, I’ve learned that success in software sales doesn’t depend on charisma — it depends on competence. Here are the key skills every professional in software and IT sales should focus on:</p>
+
+<h3>1. Technical Understanding in Software Sales</h3>
+<p>You don’t have to code, but you must understand what you’re selling. Knowing how front-end frameworks, back-end systems, and APIs interact will help you explain products with confidence and clarity. It also earns you instant respect from technical teams and clients alike.</p>
+
+<h3>2. Active Listening and Empathy</h3>
+<p>The best salespeople don’t just talk — they listen. Most clients may not express their exact problems, so your ability to read between the lines and identify hidden pain points is critical to offering the right solution.</p>
+
+<h3>3. Consultative Selling Techniques</h3>
+<p>Modern software sales is no longer about pushing a product. It’s about diagnosing business challenges and designing solutions that deliver measurable results. The more you guide instead of pitch, the stronger your client relationships become.</p>
+
+<h3>4. Data-Driven Selling Approach</h3>
+<p>A great salesperson understands the power of analytics. Use CRM data, lead metrics, and conversion insights to refine your sales strategy. Data helps you forecast trends and improve close rates.</p>
+
+<h3>5. Relationship Building in IT Sales</h3>
+<p>The secret behind every successful deal is trust. Clients rarely remember the slides you showed them — but they remember how you made them feel and whether you stood by them post-sale. Strong relationships lead to repeat business and referrals.</p>
+
+<h3>6. Adaptability and Continuous Learning</h3>
+<p>Technology changes fast — new frameworks, tools, and market trends appear every quarter. Staying curious, learning consistently, and adapting to industry shifts keeps you relevant and ahead of the competition.</p>
+
+<h2>Building Authority in Software Sales Through Value</h2>
+
+<p>Real authority in software sales doesn’t come from job titles or years of experience — it comes from how much value you create for your clients.</p>
+
+<p>Over the years, I’ve had moments where I thought I was doing everything right — preparing detailed decks, giving flawless demos — yet still not connecting with the client. It took a few of those experiences to realize that authority doesn’t come from how well you present, but from how deeply you understand.</p>
+
+<p>I began focusing more on understanding the client’s environment, the pain points behind their requirements, and what success really looked like for them. Those early experiences shaped how I approach every project today.</p>
+
+<p>Later, through conversations with seasoned leaders in the software and consulting space, I understood this even better — they all emphasized that authority in sales is earned when clients feel you’re invested in their growth, not your quota.</p>
+
+<p>That realization changed my entire approach to selling — from showcasing features to communicating outcomes. Every meeting since then has been less about “selling” and more about guiding. That shift has been the foundation of every long-term partnership I’ve built. Every conversation should leave the client with more clarity and confidence than before. That’s what builds credibility and opens doors to long-term partnerships.</p>
+
+<h2>Why Trust Is the Foundation of Software Sales Success</h2>
+
+<p>No matter how advanced technology becomes, trust remains at the heart of every deal.</p>
+
+<p>In my early days, I made the mistake of trying to sound perfect — always confident, always certain. But with time, and through real client interactions, I realized that authenticity matters far more than perfection. Clients don’t expect you to have every answer; they expect honesty and consistency.</p>
+
+<p>There were moments when unexpected challenges came up mid-project, and I had to communicate them clearly to the client instead of waiting. Every time I chose transparency, it strengthened the relationship rather than damaging it.</p>
+
+<p>Those experiences made me realize that trust isn’t built during the sale — it’s built during uncertainty. When you stand by your word and handle challenges openly, clients remember that.</p>
+
+<p>Later, while discussing this with senior industry professionals, one statement stuck with me: “Trust is not a sales strategy — it’s a leadership trait.” That single insight validated everything I had learned through experience — that the strongest client relationships are built not on promises, but on reliability, honesty, and respect.</p>
+
+<p>Your integrity becomes your brand. Once clients trust you, they’ll follow your recommendations, refer others, and stay loyal — even when competitors offer cheaper options.</p>
+
+<p>That’s what separates a good salesperson from a great one.</p>
+
+<h2>From Coding to Closing – My Reflection on Software Sales</h2>
+
+<p>Looking back, my journey from software developer to global sales leader taught me that software sales is more than selling — it’s connecting.</p>
+
+<p>It’s about connecting technology to business goals, solutions to challenges, and most importantly, people to people.</p>
+
+<p>Experience taught me how products work. Sales taught me how businesses work. And leadership taught me how trust works.</p>
+
+<p>If you’re beginning your career in software sales, my advice is simple — learn your product like a developer, listen like a consultant, and deliver like a partner.</p>
+
+<p>That’s how you master the skills needed for the best software salesperson — the one who not only meets targets but also builds trust, partnerships, and long-term success.</p>
+`,
     image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1974&auto=format&fit=crop",
     date: "Sep 2025",
   },
