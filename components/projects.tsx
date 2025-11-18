@@ -24,7 +24,7 @@ const Projects = () => {
     {
       id: 1,
       title: "Enterprise SaaS Platform",
-      description: "Developed a comprehensive SaaS solution for enterprise resource planning with custom modules for finance, HR, and operations.",
+      description: "Closed Sales of a comprehensive SaaS solution for cyber security with custom modules for various department in an organization.",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
       category: "software",
       tags: ["Python", "React", "AWS", "Docker"],

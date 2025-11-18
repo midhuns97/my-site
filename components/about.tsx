@@ -31,14 +31,14 @@ const About = () => {
       icon: <Code className="h-5 w-5 text-purple-500" />,
     },
     {
-      year: "2019-2022",
-      role: "Software Sales Officer",
+      year: "2019-2023",
+      role: "Business Development",
       description: "Transitioned to sales, closing high-value deals and developing client relationships in the tech sector.",
       icon: <Briefcase className="h-5 w-5 text-blue-500" />,
     },
     {
-      year: "2021-2024",
-      role: "Business Strategist",
+      year: "2023-2024",
+      role: "Sales Manager",
       description: "Led business strategy initiatives, focusing on market expansion and digital transformation projects.",
       icon: <LineChart className="h-5 w-5 text-indigo-500" />,
     },
@@ -144,7 +144,7 @@ const About = () => {
                       </div>
                     </div>
                     <div>
-                      <h4 className="text-lg font-medium mb-2">Business Strategy</h4>
+                      <h4 className="text-lg font-medium mb-2">Brand Strategist</h4>
                       <p className="text-muted-foreground">
                         Developing growth strategies, market analysis, and digital transformation roadmaps that align technology with business objectives.
                       </p>

@@ -14,6 +14,8 @@ import {
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import Contact from "./contact";
+
 
 const Services = () => {
   const [activeTab, setActiveTab] = useState("development");
@@ -21,48 +23,48 @@ const Services = () => {
   const services = [
     {
       id: "development",
-      title: "Software Development",
+      title: "Software Services",
       description: "Custom software solutions tailored to your business needs",
       icon: <Code className="h-6 w-6" />,
       color: "purple",
       items: [
         {
-          title: "Web Application Development",
-          description: "Full-stack web applications built with modern technologies",
+          title: "Website Development",
+          description: "Crafting high-performance websites from exclusive custom designs, eCommerce and Shopify builds that align with your brand and drive conversions.",
           icon: <Globe className="h-5 w-5" />,
         },
         {
-          title: "Mobile App Development",
-          description: "Native and cross-platform mobile applications",
+          title: "Software Development",
+          description: "Building scalable web and mobile applications tailored to unique business needs, combining functionality with user-focused design.",
           icon: <Smartphone className="h-5 w-5" />,
         },
         {
-          title: "API Development & Integration",
-          description: "Robust APIs and third-party service integrations",
+          title: "ERP Implementation",
+          description: "Streamlining operations through seamless Odoo and ERPNext implementations designed for efficiency, transparency, and data-driven decision-making.",
           icon: <Code className="h-5 w-5" />,
         },
       ],
     },
     {
       id: "strategy",
-      title: "Business Strategy",
-      description: "Strategic planning and growth consulting for technology businesses",
+      title: "Brand Strategist",
+      description: "Strategic planning and growth consulting for SME businesses",
       icon: <LineChart className="h-6 w-6" />,
       color: "blue",
       items: [
         {
           title: "Digital Transformation",
-          description: "Modernizing business processes with technology",
+          description: "Helping businesses evolve digitally with modern tools and strategies that optimize processes, customer engagement, and growth.",
           icon: <Lightbulb className="h-5 w-5" />,
         },
         {
           title: "Growth Strategy",
-          description: "Market analysis and expansion planning",
+          description: "Turning insights into action through focused SEM, SEO, and marketing plans that strengthen your brand presence and accelerate expansion.",
           icon: <LineChart className="h-5 w-5" />,
         },
         {
-          title: "Sales Process Optimization",
-          description: "Improving conversion rates and sales efficiency",
+          title: "Sales Enhancements",
+          description: "Empowering sales teams with SMM, GMB optimization, and traditional campaigns that convert awareness into measurable results.",
           icon: <ArrowRight className="h-5 w-5" />,
         },
       ],
@@ -76,17 +78,17 @@ const Services = () => {
       items: [
         {
           title: "Strategic Alliance Formation",
-          description: "Identifying and establishing valuable partnerships",
+          description: "Building high-value alliances that enhance market reach, technological strength, and mutual business growth.",
           icon: <Users className="h-5 w-5" />,
         },
         {
           title: "Partnership Management",
-          description: "Ongoing relationship management and growth",
+          description: "Managing ongoing collaborations with precision and transparency to ensure long-term success and strategic alignment.",
           icon: <Globe className="h-5 w-5" />,
         },
         {
           title: "Joint Venture Development",
-          description: "Creating collaborative business opportunities",
+          description: "Structuring and guiding joint ventures that combine shared expertise, resources, and vision for sustainable global expansion.",
           icon: <Lightbulb className="h-5 w-5" />,
         },
       ],
@@ -186,8 +188,14 @@ const Services = () => {
                         <Button 
                           variant="ghost" 
                           className={`p-0 ${getColorClass(service.color, "text")} ${getColorClass(service.color, "hover")}`}
+                          onClick={() => {
+                          const section = document.getElementById("contact");
+                          if (section) {
+                            section.scrollIntoView({ behavior: "smooth" });
+                          }
+                        }}
                         >
-                          Learn more <ArrowRight className="ml-2 h-4 w-4" />
+                          Contact Me <ArrowRight className="ml-2 h-4 w-4" />
                         </Button>
                       </CardFooter>
                     </Card>

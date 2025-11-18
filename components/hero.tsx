@@ -64,8 +64,8 @@ const Hero = () => {
             </h1>
             
             <p className="text-xl text-muted-foreground">
-              Software consultant with 7+ years of experience in development, sales, 
-              business strategy, and global partnerships. Specializing in transformative 
+              Software consultant with 7+ years of experience in Software Sales, 
+              Brand Strategist, Software Devlopment and Global Partnerships. Specializing in transformative 
               digital solutions that drive growth.
             </p>
             
