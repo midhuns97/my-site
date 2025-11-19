@@ -7,25 +7,31 @@ import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import Faq from "@/components/faq";
 
-// ✅ Required for static export
+// For static export with dynamic routes
 export function generateStaticParams() {
   return articles.map((article) => ({
     articleId: article.id,
   }));
 }
 
-// ❌ no need for async / Promise params
-// ✅ params is a plain object
-export default function ArticleDetail({
-  params,
-}: {
+type ArticleDetailPageProps = {
   params: { articleId: string };
-}) {
+};
+
+export default function ArticleDetail({ params }: ArticleDetailPageProps) {
   const { articleId } = params;
   const article = articles.find((a) => a.id === articleId);
 
   if (!article) {
-    return <p className="text-center py-20">Article not found.</p>;
+    return (
+      <>
+        <Navbar />
+        <main className="container mx-auto px-4 py-16 pt-32">
+          <p className="text-center py-20">Article not found.</p>
+        </main>
+        <Footer />
+      </>
+    );
   }
 
   return (
@@ -36,7 +42,10 @@ export default function ArticleDetail({
           <h1 className="text-3xl md:text-4xl font-bold mb-6">
             {article.title}
           </h1>
-          <p className="text-sm text-muted-foreground mb-8">{article.date}</p>
+
+          <p className="text-sm text-muted-foreground mb-8">
+            {article.date}
+          </p>
 
           <div className="relative w-full h-72 mb-8 rounded-lg overflow-hidden">
             <Image
@@ -57,14 +66,17 @@ export default function ArticleDetail({
           </div>
 
           <div className="mt-12">
-            <Link href="/#articles" className="text-purple-500 hover:underline">
+            <Link
+              href="/#articles"
+              className="text-purple-500 hover:underline"
+            >
               ← Back to Articles
             </Link>
           </div>
         </div>
       </main>
 
-      {/* 👇 FAQ now depends on the article */}
+      {/* FAQ only if this article has one */}
       {article.faq && <Faq Faq={article.faq} />}
 
       <Contact />
