@@ -28,7 +28,7 @@ const Hero = () => {
   return (
     <section 
       id="hero" 
-      className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center pt-32 overflow-hidden"
     >
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-background to-background/80 z-0"></div>
@@ -110,7 +110,7 @@ const Hero = () => {
             <div className="relative w-full aspect-square max-w-md mx-auto">
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-500/20 to-blue-500/20 blur-3xl"></div>
               <div className="relative bg-gradient-to-r from-purple-500 to-blue-500 rounded-3xl p-1 shadow-2xl shadow-purple-500/20">
-                <div className="bg-background/95 backdrop-blur-sm rounded-3xl p-6 h-full">
+                <div className="bg-background/95 backdrop-blur-sm rounded-3xl p-6 pb-10  h-full">
                   <div className="grid grid-cols-2 gap-4 h-full">
                     <div className="space-y-4">
                       <div className="bg-muted rounded-xl p-4 h-1/2 flex flex-col justify-between group hover:bg-purple-500/10 transition-colors">

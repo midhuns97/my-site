@@ -36,7 +36,7 @@ const Navbar = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+      <div className="container mx-auto px-4 py-8 flex items-center justify-between">
         <Link href="/" className="text-5xl font-bold text-primary">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-blue-500">
             Midhun S

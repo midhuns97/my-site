@@ -1,3 +1,6 @@
+import Faq from "@/components/faq"
+import { brandFaq } from '@/const/faq';
+
 export const articles = [
   {
   id: "brand-strategist-in-dubai",

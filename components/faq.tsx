@@ -4,30 +4,8 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 
-const Faq = [ 
-  {
-    question: "What services do you provide?",
-    answer:
-      "We specialize in custom software solutions, mobile and web app development, and complete digital strategy — designed to help brands scale efficiently.",
-  },
-  {
-    question: "How long does it take to complete a project?",
-    answer:
-      "Project timelines vary depending on scope. Typically, small apps take 4–6 weeks, while complex enterprise platforms take 10–14 weeks with defined milestones.",
-  },
-  {
-    question: "Do you offer post-launch support?",
-    answer:
-      "Yes. We provide long-term maintenance, updates, and optimization to ensure your product stays secure and performs at its best.",
-  },
-  {
-    question: "How can I start a project with you?",
-    answer:
-      "You can reach out through our contact form or email. We'll set up a short discovery call to understand your goals and prepare a proposal.",
-  },
-];
 
-export default function FAQ() {
+export default function FAQ({Faq}:any) {
   const [active, setActive] = useState<number | null>(null);
 
   return (
@@ -51,7 +29,7 @@ export default function FAQ() {
 
         {/* FAQ list */}
         <div className="max-w-3xl mx-auto space-y-4">
-          {Faq.map((item, index) => {
+          {Faq.map((item: any, index: any) => {
             const isOpen = active === index;
 
             return (
@@ -59,41 +37,53 @@ export default function FAQ() {
                 key={index}
                 initial={false}
                 animate={{
-                  backgroundColor: isOpen ? "rgba(255,255,255,0.05)" : "rgba(255,255,255,0.02)",
-                  borderColor: isOpen ? "rgba(168,85,247,0.4)" : "rgba(255,255,255,0.05)",
+                  backgroundColor: isOpen
+                    ? "rgba(255,255,255,0.05)"
+                    : "rgba(255,255,255,0.02)",
+                  borderColor: isOpen
+                    ? "rgba(168,85,247,0.4)"
+                    : "rgba(255,255,255,0.05)",
                 }}
                 transition={{ duration: 0.3 }}
-                className="backdrop-blur-sm border rounded-2xl overflow-hidden shadow-sm"
+                className="backdrop-blur-sm border rounded-2xl shadow-sm"
               >
-                <button
-                  onClick={() => setActive(isOpen ? null : index)}
-                  className="w-full flex justify-between items-center px-6 py-5 text-left"
+              <button
+                onClick={() => setActive(isOpen ? null : index)}
+                className="w-full flex justify-between items-center px-6 py-5 text-left"
+              >
+                <span className="font-medium text-base md:text-lg text-foreground">
+                  {item.question}
+                </span>
+                <motion.div
+                  animate={{ rotate: isOpen ? 180 : 0 }}
+                  transition={{ duration: 0.3 }}
                 >
-                  <span className="font-medium text-base md:text-lg text-foreground">
-                    {item.question}
-                  </span>
-                  <motion.div
-                    animate={{ rotate: isOpen ? 180 : 0 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <ChevronDown className="w-5 h-5 text-purple-400" />
-                  </motion.div>
-                </button>
+                  <ChevronDown className="w-5 h-5 text-purple-400" />
+                </motion.div>
+              </button>
 
-                <AnimatePresence initial={false}>
-                  {isOpen && (
-                    <motion.div
-                      initial={{ height: 0, opacity: 0 }}
-                      animate={{ height: "auto", opacity: 1 }}
-                      exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.4, ease: "easeInOut" }}
-                      className="px-6 pb-5 text-sm md:text-base text-muted-foreground"
-                    >
+              <AnimatePresence initial={false}>
+                {isOpen && (
+                  <motion.div
+                    key="content"
+                    initial="collapsed"
+                    animate="open"
+                    exit="collapsed"
+                    variants={{
+                      open: { height: "auto", opacity: 1 },
+                      collapsed: { height: 0, opacity: 0 },
+                    }}
+                    transition={{ duration: 0.3, ease: "easeInOut" }}
+                    style={{ overflow: "hidden" }} // important: only the answer area is clipped
+                  >
+                    {/* padding moved here so it's not being height-animated */}
+                    <div className="px-6 pb-5 text-sm md:text-base text-muted-foreground">
                       <div className="pt-1 leading-relaxed">{item.answer}</div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </motion.div>
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </motion.div>
             );
           })}
         </div>

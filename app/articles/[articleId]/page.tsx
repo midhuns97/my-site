@@ -39,7 +39,7 @@ export default async function ArticleDetail({
             <p>{article.excerpt}</p>
             <div dangerouslySetInnerHTML={{ __html: article.content ?? "" }} />
           </div>
-
+          
           <div className="mt-12">
             <Link href="/#articles" className="text-purple-500 hover:underline">
               ← Back to Articles
