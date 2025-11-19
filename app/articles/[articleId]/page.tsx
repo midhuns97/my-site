@@ -5,6 +5,9 @@ import { articles } from "@/const/data";
 import Contact from "@/components/contact";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
+import Faq from "@/components/faq";
+import {brandFaq} from "@/const/faq"
+
 
 // Required for static export
 export function generateStaticParams() {
@@ -47,6 +50,7 @@ export default async function ArticleDetail({
           </div>
         </div>
       </main>
+      <Faq Faq={brandFaq} />
       <Contact />
       <Footer />
     </>

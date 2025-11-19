@@ -29,7 +29,7 @@ export default function FAQ({Faq}:any) {
 
         {/* FAQ list */}
         <div className="max-w-3xl mx-auto space-y-4">
-          {Faq.map((item: any, index: any) => {
+          {Faq?.map((item: any, index: any) => {
             const isOpen = active === index;
 
             return (
