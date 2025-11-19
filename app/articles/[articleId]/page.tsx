@@ -7,7 +7,7 @@ import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import Faq from "@/components/faq";
 
-// For static export with dynamic routes
+// Required for static export with dynamic routes
 export function generateStaticParams() {
   return articles.map((article) => ({
     articleId: article.id,
@@ -15,11 +15,12 @@ export function generateStaticParams() {
 }
 
 type ArticleDetailPageProps = {
-  params: { articleId: string };
+  params: Promise<{ articleId: string }>; // 👈 match your PageProps expectation
 };
 
-export default function ArticleDetail({ params }: ArticleDetailPageProps) {
-  const { articleId } = params;
+export default async function ArticleDetail({ params }: ArticleDetailPageProps) {
+  const { articleId } = await params; // 👈 await the Promise (works even if it's a plain object at runtime)
+
   const article = articles.find((a) => a.id === articleId);
 
   if (!article) {
@@ -76,7 +77,6 @@ export default function ArticleDetail({ params }: ArticleDetailPageProps) {
         </div>
       </main>
 
-      {/* FAQ only if this article has one */}
       {article.faq && <Faq Faq={article.faq} />}
 
       <Contact />
