@@ -17,15 +17,16 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // 👇 Always point to homepage sections
   const navLinks = [
-    { name: "Home", href: "#hero" },
-    { name: "About", href: "#about" },
-    { name: "Services", href: "#services" },
-    { name: "Projects", href: "#projects" },
-    { name: "Testimonials", href: "#testimonials" },
-    { name: "Articles", href: "#articles" },
-    { name: "FAQ", href: "#faq" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", nameKey: "hero", href: "/" },         // or "/#hero" if you want it to scroll
+    { name: "About", nameKey: "about", href: "/#about" },
+    { name: "Services", nameKey: "services", href: "/#services" },
+    { name: "Projects", nameKey: "projects", href: "/#projects" },
+    { name: "Testimonials", nameKey: "testimonials", href: "/#testimonials" },
+    { name: "Articles", nameKey: "articles", href: "/#articles" },
+    { name: "FAQ", nameKey: "faq", href: "/#faq" },
+    { name: "Contact", nameKey: "contact", href: "/#contact" },
   ];
 
   return (
@@ -47,7 +48,7 @@ const Navbar = () => {
         <nav className="hidden md:flex items-center space-x-8">
           {navLinks.map((link) => (
             <Link
-              key={link.name}
+              key={link.nameKey}
               href={link.href}
               className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors relative group"
             >
@@ -55,11 +56,16 @@ const Navbar = () => {
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-blue-500 transition-all duration-300 group-hover:w-full"></span>
             </Link>
           ))}
-          <a href="https://calendly.com/midhun-s/30min" target="_blank" rel="noopener noreferrer">
+
+          <a
+            href="https://calendly.com/midhun-s/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Button
-             className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white shadow-lg shadow-purple-500/20"
+              className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white shadow-lg shadow-purple-500/20"
               size="sm"
-              >
+            >
               Book a Call
             </Button>
           </a>
@@ -80,7 +86,7 @@ const Navbar = () => {
           <nav className="container mx-auto px-4 py-4 flex flex-col space-y-4">
             {navLinks.map((link) => (
               <Link
-                key={link.name}
+                key={link.nameKey}
                 href={link.href}
                 className="text-base font-medium text-foreground hover:text-primary transition-colors py-2"
                 onClick={() => setIsMenuOpen(false)}
@@ -88,14 +94,18 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
-          <a href="https://calendly.com/midhun-s/30min" target="_blank" rel="noopener noreferrer">
-            <Button
-             className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white shadow-lg shadow-purple-500/20"
-              size="sm"
+            <a
+              href="https://calendly.com/midhun-s/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white shadow-lg shadow-purple-500/20"
+                size="sm"
               >
-              Book a Call
-            </Button>
-          </a>
+                Book a Call
+              </Button>
+            </a>
           </nav>
         </div>
       )}

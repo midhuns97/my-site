@@ -64,7 +64,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section id="testimonials" className="py-20 relative">
+    <section id="testimonials" className="scroll-mt-12 py-20 relative">
       {/* Background elements */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background"></div>
       <div className="absolute top-0 left-0 w-full h-full bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>

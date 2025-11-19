@@ -1,4 +1,14 @@
-import { brandFaq } from "@/const/faq";
+import { FaqItem, brandFaq, ecomFaq, homeFaq } from "@/const/faq";
+
+export type Article = {
+  id: string;
+  title: string;
+  excerpt: string;
+  content?: string;
+  image: string;
+  date: string;
+  faq?: FaqItem[]; // 👈 NEW: FAQ per article (optional)
+};
 
 export const articles = [
   {
@@ -40,6 +50,7 @@ export const articles = [
   `,
     image: "https://opengraph.b-cdn.net/production/images/AZqGGL5suRY3IFHxCV50-Q-AZqGGL5s5zWr2MwOZexXow.jpg?q=80&w=1974&auto=format&fit=crop",
     date: "Jul 2025",
+    faq: brandFaq,
   },
   {
     id: "best-software-salesperson",
@@ -130,13 +141,148 @@ export const articles = [
 `,
     image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1974&auto=format&fit=crop",
     date: "Sep 2025",
+    faq: homeFaq,
   },
   {
-    id: "nextjs-performance-guide",
-    title: "Next.js Performance Guide: Speed Up Your Website",
-    excerpt: "Simple optimizations to make your Next.js website faster, smoother, and SEO-friendly.",
+    id: "ecommerce-business",
+    title: "How to Build a Successful Ecommerce Business in the UAE",
+    excerpt: "Things you should need to take care before building an eCommerce.",
+    content:`<h1>How to Build a Successful Ecommerce Business in the UAE – A Realistic, Experience-Based Guide</h1>
+<p>
+  Building an ecommerce business in the UAE sounds exciting — and it truly is — but behind every successful online store lies months of planning, testing, refining, and learning from unexpected challenges. When you look at thriving platforms today, you only see the polished front-end: the smooth checkout, the beautiful UI, the fast delivery. What you don’t see is the countless decisions made long before the first product ever went live.
+</p>
+<p>
+  Over the years, while working closely with founders, technology teams, and marketers in the UAE, I’ve watched many ecommerce ideas evolve into successful businesses — and many disappear halfway because the foundation wasn't strong enough. This blog distills that entire journey into a realistic, story-driven breakdown of what it truly takes to build a strong ecommerce presence in the UAE.
+</p>
+<h2>The First Big Question: Ecommerce or Marketplace?</h2>
+<p>
+  Most ecommerce journeys begin with excitement — “I want to build an app like Amazon” or “I want a store like Noon.” But soon after the conversation starts, reality appears: do you really need a marketplace, or do you simply need an ecommerce store?
+</p>
+<p>
+  This is where many entrepreneurs get stuck. I remember one founder who was convinced he needed a marketplace with vendor onboarding, delivery automation, and complex cataloging. In reality, he was selling products from only one brand. A marketplace would have doubled his cost, tripled his timeline, and added layers of features he would never use.
+</p>
+<p>
+  This is why the first step in building an ecommerce business is not development — it’s clarity. Before building anything, map your actual needs. Write a Business Requirements Document (BRD). Think deeply about what your platform must do, how orders will flow, when deliveries should happen, whether ERP integration is required, what payment gateways you’ll use, and how automation will reduce operational costs.
+</p>
+<p>
+  When the BRD is clear, the project moves like a planned journey. When it isn’t, development quickly becomes guesswork.
+</p>
+<h2>Understanding Your Audience – The Decision That Shapes Everything</h2>
+<p>
+  In the UAE, people think mobile app development is mandatory. But I’ve met several business owners who spent months building a beautiful mobile application only to find out their audience preferred using a browser.
+</p>
+<p>
+  In one case, a brand selling luxury niche products assumed customers would download their app. After months of effort, downloads were low because customers only purchased occasionally. They didn't feel the need to install an app for something they used once every few months.
+</p>
+<p>
+  On the other hand, daily-use services — groceries, food, medicines — thrive on app usage. Customers open them multiple times a week, making app development worth the investment.
+</p>
+<p>
+  This is why understanding audience behavior is crucial. If your product is used occasionally or seasonally, a fast, responsive web app can outperform a mobile app. If you’re building for frequent use, pushing notification-driven engagement, or loyalty-driven purchases, then an app becomes essential.
+</p>
+<p>
+  Deciding blindly often leads to wasted investment. Deciding based on audience habits leads to the right platform — and the right growth.
+</p>
+<h2>Choosing the Right Technology &amp; Development Partner</h2>
+<p>
+  Every ecommerce success story in the UAE shares one common factor: the right technology partner. A team that simply says “yes” to everything isn’t a good sign — the best teams challenge you, refine your ideas, and guide you toward stronger decisions.
+</p>
+<p>
+  I’ve seen businesses struggle because they picked the cheapest developer. The system worked in the beginning, but the moment traffic increased or new features were requested, everything broke apart. Fixing it later cost much more than doing it properly from the start.
+</p>
+<p>
+  Good development agencies act like consultants. They ask the right questions: how scalable should the project be? Do you expect high traffic? Does it need real-time delivery tracking? Will there be ERP or POS integrations? Should we build in Next.js, Shopify, or a custom stack?
+</p>
+<p>
+  A strong tech partner understands your business as well as your goals — not just the technology.
+</p>
+<h2>Deployment &amp; Cybersecurity – What No One Tells You Initially</h2>
+<p>
+  There’s a story I come across often: everything runs smoothly during testing, but on launch day, the platform crashes because the hosting couldn’t handle the traffic spike. This happens because businesses underestimate infrastructure. They assume hosting is a small checkbox, when in reality, it's the backbone of ecommerce.
+</p>
+<p>
+  Cybersecurity is equally overlooked. In a region like the UAE, data protection is taken seriously. I’ve seen ecommerce platforms face payment gateway blocks, security warnings, and suspicious bot traffic — all of which could have been prevented with proper security planning.
+</p>
+<p>
+  A reliable server setup, secure database, rate-limiting, backups, firewalls, and encrypted APIs aren’t “extras.” They are mandatory for long-term stability.
+</p>
+<h2>The Toughest Phase: Data Entry and Cataloging</h2>
+<p>
+  Surprisingly, this is the part that catches founders off guard. Building the platform is actually the easier half. Filling it with accurate, high-quality product data is the real battle.
+</p>
+<p>
+  Descriptions must be readable. Images must be clean. Categories must be consistent. One ecommerce platform had 5,000+ products with variations — what looked like a three-week job turned into three months.
+</p>
+<p>
+  Marketplaces are even more challenging: vendors delay submissions, provide mismatched attributes, or send poor-quality images. When cataloging isn’t organized, the user experience collapses regardless of how beautiful the app is.
+</p>
+<p>
+  This is why ecommerce success depends heavily on clean, well-planned data entry.
+</p>
+<h2>Testing in UAT – Alpha, Closed Beta, Open Beta</h2>
+<p>
+  No ecommerce goes live in one attempt — and if it does, it usually comes with problems. Testing is where the system meets real-world use.
+</p>
+<p>
+  During closed beta testing for one platform, customers reported that they weren’t receiving OTP codes consistently. The issue was with a specific telecom provider. Catching this before launch prevented thousands of angry complaints later.
+</p>
+<p>
+  Alpha testing catches internal bugs. Closed Beta tests real orders with limited users. Open Beta tests the platform under softer public use.
+</p>
+<p>
+  This phase often saves the project from disaster.
+</p>
+<h2>Prelaunch Marketing – Building the Buzz Before the Launch</h2>
+<p>
+  Many ecommerce businesses make the mistake of finishing development first and worrying about marketing later. But the brands that scale in the UAE usually begin marketing weeks or months before going live.
+</p>
+<p>
+  This prelaunch phase is when you decide what your brand will represent. Will it stand for luxury, affordability, reliability, or speed? What will people see first? What makes your platform worth trying?
+</p>
+<p>
+  I’ve seen brands launch quietly and struggle. And I’ve seen brands launch with momentum — teasers, influencer collaborations, signup pages, email sequences — and they start strong from day one.
+</p>
+<p>
+  The difference is preparation.
+</p>
+<h2>Launch Day – The First Test of Reality</h2>
+<p>
+  Launch day feels like a celebration, but it’s also a stress test. Even with perfect preparation, unexpected issues appear.
+</p>
+<p>
+  Sometimes payment gateways flag unusual transaction spikes. Sometimes users double-click buttons and create duplicate orders. Sometimes servers scale slower than expected.
+</p>
+<p>
+  The key is to be ready — with monitoring, support staff, backup plans, and a mindset that launch day isn’t the finish line; it’s the starting point.
+</p>
+<h2>Post-Launch Marketing – Driving Real Traffic</h2>
+<p>
+  After launch, the real work begins. There’s a misconception that user traffic will come organically. In reality, the UAE market is competitive — acquiring traffic requires a mix of digital marketing channels.
+</p>
+<p>
+  Search ads, social ads, SEO for long-term traffic, TikTok videos, WhatsApp automation, and influencer-based trust building often work together to create momentum.
+</p>
+<p>
+  Successful ecommerce brands understand something very important: marketing is not an expense. It’s a growth engine.
+</p>
+<h2>Maintenance – The Ongoing Journey</h2>
+<p>
+  After the excitement fades, the long-term work begins. Ecommerce platforms need updates, security patches, API fixes, new features, and ongoing improvements. I’ve seen businesses ignore maintenance, only to face downtime during peak periods or lose customers due to unpatched bugs.
+</p>
+<p>
+  Ecommerce isn’t something you build once and forget — it evolves continuously.
+</p>
+<h2>Final Thoughts — Ecommerce Success in the UAE Comes From Strong Foundations</h2>
+<p>
+  Every successful ecommerce story in the UAE follows the same pattern: clear planning, understanding the audience, choosing the right technology, testing thoroughly, strong marketing, and consistent improvement.
+</p>
+<p>
+  The businesses that treat ecommerce as a journey — not just a project — are the ones that scale, survive, and dominate the market.
+</p>
+`,
     image: "https://images.unsplash.com/photo-1529101091764-c3526daf38fe?q=80&w=1974&auto=format&fit=crop",
     date: "Aug 2025",
+    faq: ecomFaq,
   },
     {
     id: "power-of-digital-strategy1",

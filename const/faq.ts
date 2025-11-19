@@ -60,3 +60,36 @@ export const brandFaq: FaqItem[] = [
       "A Brand Consultant typically provides advisory support, while a Brand Strategist in UAE takes a more involved role in planning, supervising, and optimizing marketing execution. Many professionals, however, serve as both depending on project needs.",
   },
 ];
+
+export const ecomFaq: FaqItem[] = [
+  {
+    question: "How much does it cost to build an ecommerce website in the UAE?",
+    answer:
+      "Building an ecommerce platform in the UAE typically ranges from AED 5,000 for a basic website to AED 150,000+ for a custom marketplace. Costs depend on features like automation, ERP integration, payment gateways, mobile apps, and scalability.",
+  },
+  {
+    question: "Do I need a mobile app for my ecommerce business in the UAE?",
+    answer:
+      "A mobile app is not always required. If customers purchase occasionally, a fast web application is sufficient. Apps are ideal for high-frequency use cases like groceries, food delivery, and daily essentials where users engage multiple times per week.",
+  },
+  {
+    question: "Is an Ecommerce Manager necessary to run an online store in the UAE?",
+    answer:
+      "Yes, an Ecommerce Manager becomes essential as your operations grow. They manage coordination between tech, marketing, logistics, customer support, and product uploads. Without one, ecommerce businesses often face catalog issues, delays, and reduced conversions.",
+  },
+  {
+    question: "What is the best platform to build an ecommerce site in the UAE?",
+    answer:
+      "Shopify and WooCommerce are ideal for smaller brands. For custom workflows, ERP integrations, multi-vendor systems, or advanced features, custom development using Next.js or Laravel is recommended. Marketplaces almost always require fully custom solutions.",
+  },
+  {
+    question: "How long does it take to build a complete ecommerce platform?",
+    answer:
+      "A simple ecommerce website takes 3–6 weeks. Complex platforms with apps, ERP/POS integrations, automation, and multi-vendor features typically take 3–6 months depending on requirements, content readiness, and approval timelines.",
+  },
+  {
+    question: "How can I drive traffic to my ecommerce store in the UAE?",
+    answer:
+      "Traffic comes from a combination of Google Ads, Meta Ads, SEO, WhatsApp automation, TikTok content, and influencer marketing. Strong branding—clear messaging, visual identity, and product presentation—greatly improves conversion and long-term growth.",
+  },
+];

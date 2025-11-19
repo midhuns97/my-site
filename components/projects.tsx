@@ -91,7 +91,7 @@ const Projects = () => {
   };
 
   return (
-    <section id="projects" className="py-20 relative">
+    <section id="projects" className="scroll-mt-12 py-20 relative">
       {/* Background elements */}
       <div className="absolute top-1/3 right-0 w-1/4 h-1/4 bg-purple-500/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-1/3 left-0 w-1/3 h-1/3 bg-blue-500/5 rounded-full blur-3xl"></div>

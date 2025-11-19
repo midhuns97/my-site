@@ -9,7 +9,7 @@ export default function FAQ({Faq}:any) {
   const [active, setActive] = useState<number | null>(null);
 
   return (
-    <section id="faq" className="relative py-24 overflow-hidden">
+    <section id="faq" className="scroll-mt-12 py-20 relative py-24 overflow-hidden">
       {/* soft gradient background */}
       <div className="absolute inset-0 bg-gradient-to-br from-purple-950/20 via-blue-950/10 to-transparent"></div>
 
