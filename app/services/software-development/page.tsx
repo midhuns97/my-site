@@ -122,7 +122,14 @@ export default function SoftwareServicesPage() {
 
       {/* What I Build */}
       <section className="py-16 relative">
-        <div className="container mx-auto px-4">
+        
+        {/* ⭐ NEW: Background grid + soft blob */}
+        <div className="pointer-events-none absolute inset-0 opacity-[0.07]">
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808011_1px,transparent_1px),linear-gradient(to_bottom,#80808011_1px,transparent_1px)] bg-[size:26px_26px]"></div>
+        </div>
+        <div className="absolute bottom-0 right-0 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl"></div>
+
+        <div className="container mx-auto px-4 relative z-10">
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -145,7 +152,7 @@ export default function SoftwareServicesPage() {
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
+            {[ /* --- your items unchanged --- */ 
               {
                 icon: <Code2 className="w-6 h-6" />,
                 title: "Website Development",
@@ -214,7 +221,14 @@ export default function SoftwareServicesPage() {
       </section>
 
       {/* Process section */}
-      <section className="py-16 border-t border-border/60 bg-background/60">
+      <section className="py-16 border-t border-border/60 bg-background/60 relative">
+
+        {/* ⭐ NEW: Diagonal lines + soft purple glow */}
+        <div className="pointer-events-none absolute inset-0 opacity-[0.04]">
+          <div className="absolute inset-0 bg-[linear-gradient(135deg,#ffffff09_1px,transparent_1px)] bg-[size:28px_28px]" />
+        </div>
+        <div className="absolute top-1/3 -left-20 w-72 h-72 bg-purple-500/10 rounded-full blur-3xl"></div>
+
         <div className="container mx-auto px-4">
           <motion.div
             initial="hidden"
@@ -230,24 +244,16 @@ export default function SoftwareServicesPage() {
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-blue-500">
                   Product Development
                 </span>{" "}
-                
               </h2>
               <p className="text-sm md:text-base text-muted-foreground">
                 From the first call to launch and beyond, everything is structured so you
                 always know what is happening, & what’s pending.
               </p>
             </div>
-
-            {/* <div className="text-xs md:text-sm text-muted-foreground">
-              <div className="inline-flex items-center gap-2 px-3 py-2 rounded-xl border border-border bg-card/70">
-                <ShieldCheck className="w-4 h-4 text-emerald-400" />
-                <span>Transparent scope, timeline & communication</span>
-              </div>
-            </div> */}
           </motion.div>
 
-
           <div className="grid md:grid-cols-[1.3fr,1fr] gap-10">
+            
             {/* Timeline */}
             <div className="space-y-6">
               {[
@@ -277,7 +283,6 @@ export default function SoftwareServicesPage() {
                   variants={fadeUp}
                   className="relative pl-8"
                 >
-                  {/* vertical line & dot */}
                   <div className="absolute left-0 top-0 h-full flex flex-col items-center">
                     <div className="w-3 h-3 rounded-full bg-gradient-to-br from-purple-500 to-blue-500 mt-1" />
                     {i !== 3 && (
@@ -293,7 +298,7 @@ export default function SoftwareServicesPage() {
                 </motion.div>
               ))}
             </div>
-            {/* Side Card */}
+
             {/* Side Card */}
             <motion.div
               initial="hidden"
@@ -301,25 +306,15 @@ export default function SoftwareServicesPage() {
               viewport={{ once: true, amount: 0.2 }}
               custom={1}
               variants={fadeUp}
-
-              className="relative mt-12"   // ⭐ ADD THIS → moves the whole side card down
-
-              // You can increase/decrease:
-              // mt-8  (small shift)
-              // mt-12 (recommended)
-              // mt-16 (bigger shift)
-              // mt-20 (large shift, aligns with center usually)
+              className="relative mt-12"
             >
-
               <div className="absolute -inset-px rounded-2xl bg-gradient-to-br from-purple-500/20 via-blue-500/10 to-transparent blur-lg opacity-70" />
               
               <div className="relative rounded-2xl bg-card/90 border border-border/70 p-6 flex flex-col gap-4">
-                
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-xl bg-purple-500/15 flex items-center justify-center">
                     <Workflow className="w-5 h-5 text-purple-400" />
                   </div>
-
                   <div>
                     <h3 className="text-sm font-semibold">
                       Ideal for growing businesses
@@ -347,7 +342,6 @@ export default function SoftwareServicesPage() {
                     <span>Backup & security aware</span>
                   </div>
                 </div>
-
               </div>
             </motion.div>
 
@@ -356,7 +350,14 @@ export default function SoftwareServicesPage() {
       </section>
 
       {/* Tech Stack / Capabilities */}
-      <section className="py-12">
+      <section className="py-12 relative">
+
+        {/* ⭐ NEW: Dot-matrix + cyan glow */}
+        <div className="pointer-events-none absolute inset-0 opacity-[0.06]">
+          <div className="absolute inset-0 bg-[radial-gradient(circle,rgba(255,255,255,0.07)_1px,transparent_1px)] bg-[size:18px_18px]" />
+        </div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl"></div>
+
         <div className="container mx-auto px-4">
           <motion.div
             initial="hidden"
@@ -404,7 +405,6 @@ export default function SoftwareServicesPage() {
         </div>
       </section>
 
-      {/* Reuse same FAQ & Contact & Footer as homepage */}
       <Faq Faq={homeFaq} />
       <Contact />
       <Footer />
