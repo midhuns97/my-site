@@ -12,8 +12,8 @@ export type Article = {
 
 export const articles = [
   {
-  id: "brand-strategist-in-UAE",
-  title: "Freelancers, Companies, & Brand Strategist in UAE for Digital marketing?",
+  id: "brand-strategist-in-Dubai",
+  title: "Freelancers, Companies, & Brand Strategist in Dubai for Digital marketing?",
   excerpt: "Discover why hiring a Brand Strategist in UAE can transform your digital journey and measurable growth.",
   content: `
     <h1>Whom to Choose for Digital Marketing — Freelancers, Companies, or a Brand Strategist in UAE?</h1>
