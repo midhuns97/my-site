@@ -93,3 +93,46 @@ export const ecomFaq: FaqItem[] = [
       "Traffic comes from a combination of Google Ads, Meta Ads, SEO, WhatsApp automation, TikTok content, and influencer marketing. Strong branding—clear messaging, visual identity, and product presentation—greatly improves conversion and long-term growth.",
   },
 ];
+
+export const softwareFaq: FaqItem[] = [
+  {
+    question: "What does a custom website development package cost in Dubai / UAE?",
+    answer:
+      "Website costs depend on scope: basic business sites often start from AED 5,000–15,000, while custom corporate or e-commerce websites with advanced features can cost AED 40,000–100,000+. Final price depends on design complexity, features (like CMS, payment gateways), responsiveness and integrations. :contentReference[oaicite:0]{index=0}",
+  },
+  {
+    question: "How much does it cost to build a mobile app or ecommerce app in Dubai / UAE?",
+    answer:
+      "Mobile or e-commerce app development typically ranges from AED 25,000 to AED 80,000+, depending on complexity, number of platforms (iOS/Android), backend integrations, and custom features. :contentReference[oaicite:1]{index=1}",
+  },
+  {
+    question: "How long does it take to launch a website or mobile app for UAE businesses?",
+    answer:
+      "A simple website can be launched in 1–3 weeks; ecommerce platforms may take 3–5 weeks; mobile apps generally take 4–10 weeks — depending on design complexity, integrations and revisions required. :contentReference[oaicite:2]{index=2}",
+  },
+  {
+    question: "Can you build an ecommerce store compatible with UAE payment gateways, VAT, and shipping?",
+    answer:
+      "Yes — we build ecommerce platforms fully compliant with UAE requirements including local payment gateway integration, shipping logistics, multi-currency support, and VAT compliance. This ensures usability and compliance for UAE businesses. :contentReference[oaicite:3]{index=3}",
+  },
+  {
+    question: "Do you provide ERP / business software implementation for companies in Dubai / UAE?",
+    answer:
+      "Yes — we implement ERP systems (like finance, sales, CRM, inventory, operations) tailored for UAE businesses, ensuring compliance with local business practices, multi-branch support, and integration with web/mobile interfaces. :contentReference[oaicite:4]{index=4}",
+  },
+  {
+    question: "What is the typical cost range for ERP implementation in UAE?",
+    answer:
+      "For SMEs, a basic ERP implementation typically starts around AED 36,000; for larger or fully custom ERP systems, costs depend on number of modules, users, and custom workflows. :contentReference[oaicite:5]{index=5}",
+  },
+  {
+    question: "Do you offer post-launch support, maintenance and updates for websites/apps in UAE?",
+    answer:
+      "Yes — we provide long-term maintenance, security updates, bug fixes, and optimizations to ensure your website, app or ERP remains secure, up-to-date and performs at its best in UAE’s evolving digital environment.",
+  },
+  {
+    question: "How can I start a project with you if I’m based in Dubai / Sharjah / UAE?",
+    answer:
+      "You can reach out through our contact form or book a strategy call. After a short discovery call to understand your needs and business goals, we will provide a clear proposal with scope, timeline, and estimated costs adapted for UAE market.",
+  },
+];

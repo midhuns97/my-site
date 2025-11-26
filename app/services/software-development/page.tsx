@@ -17,7 +17,7 @@ import Navbar from "@/components/navbar";
 import Contact from "@/components/contact";
 import Footer from "@/components/footer";
 import Faq from "@/components/faq";
-import { homeFaq } from "@/const/faq";
+import { softwareFaq } from "@/const/faq";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -405,7 +405,7 @@ export default function SoftwareServicesPage() {
         </div>
       </section>
 
-      <Faq Faq={homeFaq} />
+      <Faq Faq={softwareFaq} />
       <Contact />
       <Footer />
     </main>
