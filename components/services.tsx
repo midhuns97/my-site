@@ -15,6 +15,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Contact from "./contact";
+import Link from "next/link"; 
 
 
 const Services = () => {
@@ -204,12 +205,23 @@ const Services = () => {
               </div>
 
               <div className="mt-12 text-center">
-                <Button 
-                  className={`bg-gradient-to-r ${getColorClass(service.color, "gradient")} text-white shadow-lg`}
-                  size="lg"
+                <Link 
+                  href={
+                    service.id === "development"
+                      ? "/services/software-development"
+                      : service.id === "strategy"
+                      ? "/services/brand-strategist"
+                      : "/services/partnership-development"
+                  }
                 >
-                  Explore {service.title} Services
-                </Button>
+                  <Button 
+                    className={`bg-gradient-to-r ${getColorClass(service.color, "gradient")} text-white shadow-lg`}
+                    size="lg"
+                  >
+                    Explore {service.title} Services
+                  </Button>
+                </Link>
+
               </div>
             </TabsContent>
           ))}
