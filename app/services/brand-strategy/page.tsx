@@ -6,7 +6,6 @@ import {
   Megaphone,
   Target,
   BarChart3,
-  LineChart,
   Lightbulb,
   Users,
   Brain,
@@ -18,10 +17,7 @@ import {
   MessageCircle,
   PlayCircle,
   MousePointerClick,
-  Store,
-  MapPinned,
   BriefcaseBusiness
-
 } from "lucide-react";
 
 import Navbar from "@/components/navbar";
