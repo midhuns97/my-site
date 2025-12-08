@@ -8,9 +8,11 @@ import {
   Globe2,
   Workflow,
   Rocket,
-  ShieldCheck,
   Server,
   Cloud,
+  Layers,
+  AppWindow,
+  ShoppingCart,s
 } from "lucide-react";
 
 import Navbar from "@/components/navbar";
@@ -34,16 +36,21 @@ const fadeUp = {
 
 export default function SoftwareServicesPage() {
   return (
-    <main className="min-h-screen bg-background text-foreground">
+    <main className="min-h-screen bg-background text-foreground relative overflow-hidden">
       <Navbar />
 
-      {/* Hero */}
+      {/* ================= HERO ================= */}
       <section className="pt-32 pb-20 relative overflow-hidden">
-        {/* soft gradient background shapes */}
-        <div className="pointer-events-none absolute inset-0">
-          <div className="absolute -top-24 -right-24 w-80 h-80 bg-purple-500/20 rounded-full blur-3xl" />
-          <div className="absolute bottom-0 -left-10 w-72 h-72 bg-blue-500/15 rounded-full blur-3xl" />
+        {/* 🔹 Background: gradients + vertical code lines */}
+        <div className="pointer-events-none absolute inset-0 -z-10">
+          {/* blobs */}
+          <div className="absolute -top-24 -right-24 w-80 h-80 bg-purple-500/25 rounded-full blur-3xl" />
+          <div className="absolute bottom-0 -left-10 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl" />
+          {/* circular outline */}
           <div className="absolute top-1/2 left-1/2 w-[480px] h-[480px] -translate-x-1/2 -translate-y-1/2 border border-white/5 rounded-full" />
+          {/* vertical code-like lines */}
+          <div className="absolute inset-y-0 left-1/4 w-px bg-gradient-to-b from-transparent via-purple-500/15 to-transparent" />
+          <div className="absolute inset-y-0 right-1/5 w-px bg-gradient-to-b from-transparent via-blue-500/15 to-transparent" />
         </div>
 
         <div className="container mx-auto px-4 relative z-10">
@@ -120,14 +127,17 @@ export default function SoftwareServicesPage() {
         </div>
       </section>
 
-      {/* What I Build */}
-      <section className="py-16 relative">
-        
-        {/* ⭐ NEW: Background grid + soft blob */}
-        <div className="pointer-events-none absolute inset-0 opacity-[0.07]">
-          <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808011_1px,transparent_1px),linear-gradient(to_bottom,#80808011_1px,transparent_1px)] bg-[size:26px_26px]"></div>
+      {/* ============= WHAT I BUILD ============= */}
+      <section className="py-16 relative overflow-hidden">
+        {/* Background: grid + UI-blocks */}
+        <div className="pointer-events-none absolute inset-0 -z-10">
+          {/* subtle grid */}
+          <div className="absolute inset-0 opacity-[0.06] bg-[linear-gradient(to_right,#80808018_1px,transparent_1px),linear-gradient(to_bottom,#80808018_1px,transparent_1px)] bg-[size:26px_26px]" />
+          {/* floating UI blocks */}
+          <div className="absolute -top-6 right-10 w-40 h-24 border border-white/6 rounded-xl bg-background/40" />
+          <div className="absolute bottom-0 left-4 w-32 h-20 border border-white/5 rounded-lg bg-background/30" />
+          <div className="absolute bottom-10 right-1/3 w-24 h-14 border border-white/5 rounded-lg bg-background/20" />
         </div>
-        <div className="absolute bottom-0 right-0 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl"></div>
 
         <div className="container mx-auto px-4 relative z-10">
           <motion.div
@@ -152,43 +162,44 @@ export default function SoftwareServicesPage() {
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[ /* --- your items unchanged --- */ 
+            {[
               {
-                icon: <Code2 className="w-6 h-6" />,
+                icon: <Globe2 className="w-6 h-6" />,
                 title: "Website Development",
-                desc: "Websites portals, dashboards, and internal tools that centralize operations and reduce manual work.",
+                desc: "Modern, fast, Engine Optimization ready websites designed to elevate your brand and deliver a smooth user experience across all devices.",
                 badge: "Next.js • WordPress • Strapi",
               },
               {
                 icon: <Smartphone className="w-6 h-6" />,
-                title: "Something",
-                desc: "Flutter-based cross-platform apps for Android & iOS that keep customers, sales teams, or partners connected.",
-                badge: "Flutter • APIs • Push",
+                title: "Cross-Platform Mobile Apps",
+                desc: "Flutter & Reactive Native-based cross-platform apps for Android & iOS that keep client satisfied with cost effective application development",
+                badge: "Flutter • React Native • .NET MAUI",
               },
               {
-                icon: <Globe2 className="w-6 h-6" />,
+                icon: <Layers className="w-6 h-6" />,   // ⭐ Best for ERP modules
                 title: "ERP Implementations",
-                desc: "Scalable ERP, consist of features like Finance, Sales, CRM & Inventory that runs your business to successfull",
+                desc: "End-to-end ERP setups tailored to your workflows, ensuring seamless operations, real-time visibility, and scalable business automation",
                 badge: "Odoo • SAP • ERP Next",
               },
               {
-                icon: <Code2 className="w-6 h-6" />,
+                icon: <AppWindow className="w-6 h-6" />,   // ⭐ Represents dashboards & web apps
                 title: "Web Applications",
-                desc: "Custom web portals, dashboards, and internal tools that centralize operations and reduce manual work.",
+                desc: "Custom web applications built for speed, security, and usability—crafted to streamline operations, dashboards, and support business growth.",
                 badge: "Node.js • React • Python",
               },
               {
-                icon: <Smartphone className="w-6 h-6" />,
-                title: "Mobile Apps",
-                desc: "Flutter-based cross-platform apps for Android & iOS that keep customers, sales teams, or partners connected.",
-                badge: "Flutter • React Native • Native",
+                icon: <Smartphone className="w-6 h-6" />,   // You can also use <Mobile /> if available
+                title: "Native Mobile Apps",
+                desc: "High-performance Android and iOS apps built natively for unmatched speed, smoother interactions, and deeper device integration",
+                badge: "Kotlin • Swift • Java",
               },
               {
-                icon: <Globe2 className="w-6 h-6" />,
+                icon: <ShoppingCart className="w-6 h-6" />,   // ⭐ Perfect for Ecommerce
                 title: "Ecommerce & Platforms",
-                desc: "Scalable ecommerce, booking, or marketplace platforms that connect your products, services, and logistics.",
+                desc: "High-conversion ecommerce & marketplace stores optimized for performance, scalable catalog management, and seamless checkout experiences.",
                 badge: "Custom • Shopify • WooCommerce",
               },
+
             ].map((item, i) => (
               <motion.div
                 key={item.title}
@@ -220,16 +231,24 @@ export default function SoftwareServicesPage() {
         </div>
       </section>
 
-      {/* Process section */}
-      <section className="py-16 border-t border-border/60 bg-background/60 relative">
-
-        {/* ⭐ NEW: Diagonal lines + soft purple glow */}
-        <div className="pointer-events-none absolute inset-0 opacity-[0.04]">
-          <div className="absolute inset-0 bg-[linear-gradient(135deg,#ffffff09_1px,transparent_1px)] bg-[size:28px_28px]" />
+      {/* ============= PROCESS SECTION ============= */}
+      <section className="py-16 border-t border-border/60 bg-background/60 relative overflow-hidden">
+        {/* Background: diagonal lines + process nodes */}
+        <div className="pointer-events-none absolute inset-0 -z-10">
+          {/* diagonal pattern */}
+          <div className="absolute inset-0 opacity-[0.05] bg-[linear-gradient(135deg,#ffffff12_1px,transparent_1px)] bg-[size:30px_30px]" />
+          {/* small nodes + connecting bars */}
+          <div className="absolute top-1/3 left-10 w-2 h-2 rounded-full bg-purple-400/40" />
+          <div className="absolute top-[36%] left-16 w-16 h-px bg-purple-400/30" />
+          <div className="absolute top-[42%] left-32 w-2 h-2 rounded-full bg-blue-400/40" />
+          <div className="absolute top-[48%] left-40 w-24 h-px bg-blue-400/25" />
+          <div className="absolute bottom-24 right-10 w-2 h-2 rounded-full bg-cyan-400/40" />
+          <div className="absolute bottom-28 right-24 w-16 h-px bg-cyan-400/30" />
+          {/* glow */}
+          <div className="absolute top-1/3 -left-20 w-72 h-72 bg-purple-500/15 rounded-full blur-3xl" />
         </div>
-        <div className="absolute top-1/3 -left-20 w-72 h-72 bg-purple-500/10 rounded-full blur-3xl"></div>
 
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 relative z-10">
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -253,7 +272,6 @@ export default function SoftwareServicesPage() {
           </motion.div>
 
           <div className="grid md:grid-cols-[1.3fr,1fr] gap-10">
-            
             {/* Timeline */}
             <div className="space-y-6">
               {[
@@ -309,7 +327,7 @@ export default function SoftwareServicesPage() {
               className="relative mt-12"
             >
               <div className="absolute -inset-px rounded-2xl bg-gradient-to-br from-purple-500/20 via-blue-500/10 to-transparent blur-lg opacity-70" />
-              
+
               <div className="relative rounded-2xl bg-card/90 border border-border/70 p-6 flex flex-col gap-4">
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-xl bg-purple-500/15 flex items-center justify-center">
@@ -349,16 +367,119 @@ export default function SoftwareServicesPage() {
         </div>
       </section>
 
-      {/* Tech Stack / Capabilities */}
-      <section className="py-12 relative">
-
-        {/* ⭐ NEW: Dot-matrix + cyan glow */}
-        <div className="pointer-events-none absolute inset-0 opacity-[0.06]">
-          <div className="absolute inset-0 bg-[radial-gradient(circle,rgba(255,255,255,0.07)_1px,transparent_1px)] bg-[size:18px_18px]" />
+      {/* ===== EXPERIENCE & CAPABILITIES ===== */}
+      <section className="py-16 relative overflow-hidden">
+        {/* Background: layered grid + tiles */}
+        <div className="pointer-events-none absolute inset-0 -z-10">
+          <div className="absolute inset-0 opacity-[0.05] bg-[linear-gradient(to_right,#ffffff12_1px,transparent_1px),linear-gradient(to_bottom,#ffffff12_1px,transparent_1px)] bg-[size:24px_24px]" />
+          <div className="absolute -top-10 left-0 w-80 h-80 bg-purple-500/12 rounded-full blur-3xl" />
+          {/* pseudo tiles */}
+          <div className="absolute top-24 right-8 w-40 h-24 border border-white/7 rounded-xl bg-background/40" />
+          <div className="absolute bottom-16 left-10 w-32 h-18 border border-white/7 rounded-lg bg-background/30" />
         </div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl"></div>
 
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 relative z-10">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            custom={0}
+            variants={fadeUp}
+            className="text-center max-w-2xl mx-auto mb-12"
+          >
+            <h2 className="text-2xl md:text-3xl font-bold mb-3">
+              Experience in{" "}
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-blue-500">
+                High-Impact Digital Projects
+              </span>
+            </h2>
+            <p className="text-muted-foreground text-sm md:text-base">
+              Over the years, I’ve helped businesses across the globe convert ideas into complete
+              digital products — improving operations, customer engagement, and revenue.
+              Below is a breakdown of my project and consultation expertise across
+              Web, Mobile, and Ecommerce ecosystems.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Web Development */}
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.3 }}
+              custom={1}
+              variants={fadeUp}
+              className="relative group"
+            >
+              <div className="absolute -inset-px rounded-2xl bg-gradient-to-br from-purple-500/0 via-purple-500/10 to-blue-500/0 opacity-0 group-hover:opacity-100 blur transition" />
+              <div className="relative rounded-2xl border border-border/60 bg-card/80 backdrop-blur p-6">
+                <h3 className="text-lg font-semibold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-400 mb-3">
+                  Web Development
+                </h3>
+                <ul className="text-sm text-muted-foreground space-y-2">
+                  <li>• Website Development</li>
+                  <li>• Web Application Development</li>
+                  <li>• PWA (Progressive Web App) Development</li>
+                </ul>
+              </div>
+            </motion.div>
+
+            {/* Mobile App Development */}
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.3 }}
+              custom={2}
+              variants={fadeUp}
+              className="relative group"
+            >
+              <div className="absolute -inset-px rounded-2xl bg-gradient-to-br from-purple-500/0 via-purple-500/10 to-blue-500/0 opacity-0 group-hover:opacity-100 blur transition" />
+              <div className="relative rounded-2xl border border-border/60 bg-card/80 backdrop-blur p-6">
+                <h3 className="text-lg font-semibold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-400 mb-3">
+                  Mobile App Development
+                </h3>
+                <ul className="text-sm text-muted-foreground space-y-2">
+                  <li>• Hybrid Apps (Flutter & React Native)</li>
+                  <li>• iOS Native Development</li>
+                  <li>• Android Native Development</li>
+                </ul>
+              </div>
+            </motion.div>
+
+            {/* Ecommerce Development */}
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.3 }}
+              custom={3}
+              variants={fadeUp}
+              className="relative group"
+            >
+              <div className="absolute -inset-px rounded-2xl bg-gradient-to-br from-purple-500/0 via-purple-500/10 to-blue-500/0 opacity-0 group-hover:opacity-100 blur transition" />
+              <div className="relative rounded-2xl border border-border/60 bg-card/80 backdrop-blur p-6">
+                <h3 className="text-lg font-semibold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-400 mb-3">
+                  Ecommerce Development
+                </h3>
+                <ul className="text-sm text-muted-foreground space-y-2">
+                  <li>• Shopify & WooCommerce</li>
+                  <li>• Django Oscar</li>
+                  <li>• Magento</li>
+                </ul>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* ============= TECH STACK ============= */}
+      <section className="py-12 relative overflow-hidden">
+        {/* Background: dot-matrix / matrix-like */}
+        <div className="pointer-events-none absolute inset-0 -z-10">
+          <div className="absolute inset-0 opacity-[0.06] bg-[radial-gradient(circle,rgba(255,255,255,0.08)_1px,transparent_1px)] bg-[size:16px_16px]" />
+          <div className="absolute bottom-0 right-0 w-96 h-96 bg-cyan-500/12 rounded-full blur-3xl" />
+        </div>
+
+        <div className="container mx-auto px-4 relative z-10">
           <motion.div
             initial="hidden"
             whileInView="visible"

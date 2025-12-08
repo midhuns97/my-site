@@ -210,7 +210,7 @@ const Services = () => {
                     service.id === "development"
                       ? "/services/software-development"
                       : service.id === "strategy"
-                      ? "/services/brand-strategist"
+                      ? "/services/brand-strategy"
                       : "/services/partnership-development"
                   }
                 >
