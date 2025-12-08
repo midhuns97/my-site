@@ -12,7 +12,7 @@ import {
   Cloud,
   Layers,
   AppWindow,
-  ShoppingCart,s
+  ShoppingCart
 } from "lucide-react";
 
 import Navbar from "@/components/navbar";
@@ -167,7 +167,7 @@ export default function SoftwareServicesPage() {
                 icon: <Globe2 className="w-6 h-6" />,
                 title: "Website Development",
                 desc: "Modern, fast, Engine Optimization ready websites designed to elevate your brand and deliver a smooth user experience across all devices.",
-                badge: "Next.js • WordPress • Strapi",
+                badge: "Next.js �� WordPress • Strapi",
               },
               {
                 icon: <Smartphone className="w-6 h-6" />,
