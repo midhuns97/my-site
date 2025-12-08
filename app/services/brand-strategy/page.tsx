@@ -11,7 +11,6 @@ import {
   Users,
   Brain,
   Globe2,
-  Funnel,
   Sparkles,
   Rocket,
   CheckCircle2,
