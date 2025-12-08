@@ -344,7 +344,7 @@ export default function BrandBuildingPage() {
                   desc: "Define what matters most right now: awareness, qualified leads, showroom walk-ins, pipeline velocity or repeat purchases.",
                 },
                 {
-                  title: "2. Funnel & Journey Design",
+                  title: "2. Funnels & Journey Design",
                   desc: "Map out your ideal buyer’s journey across Meta, Google, YouTube, LinkedIn, website, WhatsApp and showroom touchpoints.",
                 },
                 {
