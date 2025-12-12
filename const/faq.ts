@@ -136,3 +136,31 @@ export const softwareFaq: FaqItem[] = [
       "You can reach out through our contact form or book a strategy call. After a short discovery call to understand your needs and business goals, we will provide a clear proposal with scope, timeline, and estimated costs adapted for UAE market.",
   },
 ];
+
+export const partnershipFaq = [
+  {
+    question: "What makes a successful strategic partnership?",
+    answer:
+      "Successful partnerships are built on aligned goals, complementary strengths, clear communication, accountability, and a structure that promotes mutual success.",
+  },
+  {
+    question: "How long does it take to establish a strategic alliance?",
+    answer:
+      "Most alliances take 3–9 months depending on complexity, due diligence, negotiations, legal processes, and integration planning.",
+  },
+  {
+    question: "Do you support cross-border or international partnerships?",
+    answer:
+      "Yes. I help navigate cultural differences, compliance challenges, legal restrictions, and international business frameworks.",
+  },
+  {
+    question: "How is success measured in partnerships?",
+    answer:
+      "We track revenue impact, cost savings, innovation throughput, partner engagement, market expansion, and customer influence.",
+  },
+  {
+    question: "Do you help manage partnerships after they go live?",
+    answer:
+      "Yes. Partnership governance, conflict resolution, quarterly reviews, performance dashboards, and optimization are all included.",
+  },
+];
