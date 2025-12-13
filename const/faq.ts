@@ -164,3 +164,41 @@ export const partnershipFaq = [
       "Yes. Partnership governance, conflict resolution, quarterly reviews, performance dashboards, and optimization are all included.",
   },
 ];
+
+export const salesaiFaq = [
+  {
+    question: "How do I automate my entire sales process without hiring more people?",
+    answer:
+      "Automate repetitive tasks first—lead capture, follow-ups, reminders, and CRM updates. Tools like n8n, HubSpot AI, and Zapier can run these tasks automatically in the background.",
+  },
+  {
+    question: "Which AI tools should I use for sales automation if I'm just getting started?",
+    answer:
+      "Begin with ChatGPT for content, Apollo, Clay & APIfy for lead data, and n8n for workflows. These three cover writing, lead generation, and automation without heavy setup.",
+  },
+  {
+    question: "How do I know if AI-generated leads are accurate or relevant to my business?",
+    answer:
+      "Use enrichment tools like Clay or Apollo to verify company size, industry, activity, and decision-maker details before adding them to your sales pipeline.",
+  },
+  {
+    question: "Can AI handle follow-ups better than my sales team?",
+    answer:
+      "AI ensures no follow-up is missed by triggering messages based on customer activity—email opens, website visits, or WhatsApp replies—keeping prospects engaged automatically.",
+  },
+  {
+    question: "Will AI responses sound robotic to my customers?",
+    answer:
+      "No. Modern AI tools like ChatGPT and DeepSeek generate natural, personalized responses based on your tone guide. You can review and adjust the style anytime.",
+  },
+  {
+    question: "How do I build a 24/7 chatbot that answers customer questions instantly?",
+    answer:
+      "Use Botpress, Tidio AI, or ChatGPT Assistants. They can answer common queries, qualify leads, and collect customer details even outside business hours.",
+  },
+  {
+    question: "How do I track which part of my sales process needs automation?",
+    answer:
+      "Check for time-consuming tasks—manual data entry, delayed follow-ups, repetitive emails, and proposal creation. These are usually the first areas to automate.",
+  },
+];
