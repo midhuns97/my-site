@@ -33,23 +33,34 @@ import { Textarea } from "@/components/ui/textarea";
 /* ----------------------------------------------------------
    Animated Counter Component (required for counters)
 ---------------------------------------------------------- */
-function AnimatedCounter({ end, duration = 2000, suffix = "", className = "" }) {
+function AnimatedCounter({
+  end,
+  duration = 2000,
+  suffix = "",
+  className = "",
+}: {
+  end: number;
+  duration?: number;
+  suffix?: string;
+  className?: string;
+}) {
   const [value, setValue] = useState(0);
 
   useEffect(() => {
     let start = 0;
     const increment = end / (duration / 16);
 
-    const counter = setInterval(() => {
+    const animate = () => {
       start += increment;
       if (start >= end) {
-        clearInterval(counter);
-        start = end;
+        setValue(end);
+      } else {
+        setValue(Math.floor(start));
+        requestAnimationFrame(animate);
       }
-      setValue(Math.floor(start));
-    }, 16);
+    };
 
-    return () => clearInterval(counter);
+    animate();
   }, [end, duration]);
 
   return <div className={className}>{value + suffix}</div>;
