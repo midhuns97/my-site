@@ -56,7 +56,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              {["Home", "About", "Services", "Projects", "Contact"].map((link) => (
+              {["About", "Services", "Projects", "Testimonials"].map((link) => (
                 <li key={link}>
                   <Link 
                     href={`#${link.toLowerCase()}`} 
@@ -70,22 +70,31 @@ const Footer = () => {
           </div>
 
           {/* Services */}
-          <div>
+          <div> 
             <h3 className="text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
               {[
-                "Software Development",
-                "Business Strategy",
-                "Partnership Development",
-                "Digital Transformation",
-                "Mobile App Development"
+                {
+                  label: "Software Development",
+                  url: "https://www.midhuns.com/services/software-development",
+                },
+                {
+                  label: "Brand Strategy",
+                  url: "https://www.midhuns.com/services/brand-strategy",
+                },
+                {
+                  label: "Partnership Development",
+                  url: "https://www.midhuns.com/services/partnership-development",
+                },
               ].map((service) => (
-                <li key={service}>
-                  <Link 
-                    href="#services" 
+                <li key={service.label}>
+                  <Link
+                    href={service.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    {service}
+                    {service.label}
                   </Link>
                 </li>
               ))}
