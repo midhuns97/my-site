@@ -9,7 +9,7 @@ import {
   Calendar, 
   Linkedin, 
   Twitter, 
-  Github,
+  MessageCircle,
   Send,
   Instagram
 } from "lucide-react";
@@ -73,13 +73,13 @@ const Contact = () => {
     {
       icon: <Phone className="h-5 w-5 text-blue-500" />,
       title: "Phone",
-      value: "+91 8943 397 962",
-      link: "tel:+918943397962",
+      value: "+971 505118943",
+      link: "tel:+971505118943",
     },
     {
       icon: <MapPin className="h-5 w-5 text-indigo-500" />,
       title: "Location",
-      value: "Kerala, India",
+      value: "Dubai, UAE",
       link: "#",
     },
     {
@@ -104,10 +104,10 @@ const Contact = () => {
       color: "bg-[#1DA1F2] hover:bg-[#1DA1F2]/80",
     },
     {
-      icon: <Github className="h-5 w-5" />,
-      name: "GitHub",
-      link: "https://github.com",
-      color: "bg-[#333] hover:bg-[#333]/80",
+      icon: <MessageCircle className="h-5 w-5" />,
+      name: "WhatsApp",
+      link: "https://wa.me/971505118943",
+      color: "bg-[#25D366] hover:bg-[#25D366]/80",
     },
   ];
 
