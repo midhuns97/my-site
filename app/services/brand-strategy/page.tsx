@@ -344,7 +344,7 @@ export default function BrandBuildingPage() {
                   desc: "Define what matters most right now: awareness, qualified leads, showroom walk-ins, pipeline velocity or repeat purchases.",
                 },
                 {
-                  title: "2. Funnel & Journey Design",
+                  title: "2. Funnels & Journey Design",
                   desc: "Map out your ideal buyer’s journey across Meta, Google, YouTube, LinkedIn, website, WhatsApp and showroom touchpoints.",
                 },
                 {
@@ -454,9 +454,9 @@ export default function BrandBuildingPage() {
             className="text-center max-w-3xl mx-auto mb-12"
           >
             <h2 className="text-2xl md:text-3xl font-bold mb-3">
-              Performance Marketing on{" "}
+              Identify your{" "}
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-blue-500">
-                Meta, Google, YouTube & LinkedIn
+                Marketing Platform
               </span>
             </h2>
             <p className="text-muted-foreground text-sm md:text-base">
@@ -480,8 +480,8 @@ export default function BrandBuildingPage() {
               },
               {
                 icon: <PlayCircle className="w-5 h-5" />,
-                title: "YouTube Ads",
-                desc: "Video storytelling that introduces, educates and nurtures — especially for high-ticket and complex offers.",
+                title: "YouTube & TikTok Ads",
+                desc: "Video storytelling that introduces, educates and nurtures — especially for brand awareness and offers.",
               },
               {
                 icon: <BriefcaseBusiness className="w-5 h-5" />,
@@ -601,9 +601,9 @@ export default function BrandBuildingPage() {
             variants={fadeUp}
             className="text-2xl md:text-3xl font-bold text-center mb-4"
           >
-            B2B Technology & Luxury Showrooms —{" "}
+            My Experience on{" "}
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-blue-500">
-              different playbooks, same depth of thinking
+               B2B & B2C, same depth of thinking
             </span>
           </motion.h2>
           <motion.p
@@ -613,9 +613,8 @@ export default function BrandBuildingPage() {
             className="text-sm md:text-base text-muted-foreground text-center max-w-3xl mx-auto mb-10"
           >
             I&apos;ve worked with software & automation companies, and premium
-            interior / sanitaryware / lifestyle showrooms. The audiences and
-            cycles differ, but the principles of brand, demand and trust stay
-            the same.
+            interior / sanitaryware / lifestyle showrooms. The audiences, brand principles and
+            cycles differ, but demand and trust stay the same.
           </motion.p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

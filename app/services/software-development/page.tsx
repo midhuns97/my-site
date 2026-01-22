@@ -12,7 +12,7 @@ import {
   Cloud,
   Layers,
   AppWindow,
-  ShoppingCart,s
+  ShoppingCart,
 } from "lucide-react";
 
 import Navbar from "@/components/navbar";
